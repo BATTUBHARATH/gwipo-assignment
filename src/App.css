@@ -1,0 +1,199 @@
+body {
+  background: #f6f8fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 400px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 28px 24px 28px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3182ce;
+  background: #f0f8ff;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+.error {
+  color: #e53e3e;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 6px;
+  padding-left: 2px;
+}
+
+.success {
+  margin-top: 24px;
+  color: #38a169;
+  background: #e6fffa;
+  border: 1px solid #b2f5ea;
+  border-radius: 6px;
+  padding: 14px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.profile-card {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 24px 18px;
+  margin-top: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.edit-form > div {
+  margin-bottom: 12px;
+}
+
+.edit-form label {
+  display: block;
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: #f9fafb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.customer-table th, .customer-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.customer-table th {
+  background: #e2e8f0;
+  color: #2d3748;
+}
+
+.delete-btn {
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background: #c53030;
+}
+
+.confirm-dialog {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 12px 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-top: 4px;
+  z-index: 10;
+}
+
+.confirm-dialog button {
+  margin: 0 6px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirm-dialog button:first-of-type {
+  background: #38a169;
+  color: #fff;
+}
+
+.confirm-dialog button:last-of-type {
+  background: #e53e3e;
+  color: #fff;
+}
